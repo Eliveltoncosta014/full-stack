@@ -1,6 +1,7 @@
 body {
-    background: rgb(110, 108, 108);
-
+    background:url('../img/bg-site.jpg') no-repeat #587b2a;
+    background-size: cover;
+    
 }
 
 #container {
@@ -28,4 +29,19 @@ body {
 }
 #tarefa::placeholder{
     color: #312f32;
+}
+.butTon{
+    background: rgb(85, 81, 81);
+    padding:2px;
+    border:5;
+    border-radius: 7px;
+
+}
+.link{
+    color: #0a0a0a;
+
+
+}
+.link2{
+     color: #0a0a0a;
 }
