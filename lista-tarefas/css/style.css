@@ -1,0 +1,31 @@
+body {
+    background: rgb(110, 108, 108);
+
+}
+
+#container {
+    background: rgb(253, 253, 253);
+    max-width: 500px;
+    text-align: center;
+    border: 3px solid #312f32;
+    margin: 0 auto;
+    border-radius: 30px;
+
+}
+
+#container h1 {
+    color: rgb(13, 13, 13);
+    padding: 15px;
+    font-size: 30px;
+
+}
+#tarefa{
+    border: 2px solid #0a0a0a;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    color: rgb(151, 31, 113);
+}
+#tarefa::placeholder{
+    color: #312f32;
+}
