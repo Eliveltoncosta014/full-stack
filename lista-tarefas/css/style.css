@@ -5,7 +5,7 @@ body {
 }
 
 #container {
-    background: rgb(253, 253, 253);
+    background: rgb(255, 253, 253);
     max-width: 500px;
     text-align: center;
     border: 3px solid #312f32;

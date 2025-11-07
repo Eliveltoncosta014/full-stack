@@ -1,0 +1,46 @@
+body {
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+
+
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    max-width: 800px;
+    margin: auto;
+    border: 3px solid #312f32;
+    text-align: center;
+    text-align-last: left;
+}
+
+.container h1 {
+    color: red;
+    padding: 5px;
+}
+
+.links a {
+    padding: 3px;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: red;
+    background: rgb(85, 81, 81);
+    padding:2px;
+    border:5;
+    border-radius: 7px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: rgb(17, 14, 210);
+
+}
+.container h2{
+
+    color: rgb(2, 37, 37);
+    
+}
