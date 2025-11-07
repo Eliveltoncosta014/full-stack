@@ -1,2 +1,4 @@
-//alert("Olá Turma!");
-console.log("Elivelton");
+//Função em JavaScript
+function adicionar(){
+    alert("Olá Dom Costa");
+}
