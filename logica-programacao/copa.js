@@ -6,9 +6,8 @@ A Copa do Mundo acontece a cada 4 anos
 A última foi em 2022
 */
 
-let numero1 = Number(prompt("Digite o ano que foi a ultima Copa"));
+let numero1 = Number(prompt("Digite o ano que foi a ultima Copa"))
 let numero2= Number(prompt("adicione mais quatro anos "))
 
 //sub 
-console.log("O ano que acontece a proxima Copa do Mundo é:", numero1+numero2);
-s
+console.log("O ano que acontecera a proxima Copa do Mundo é:", numero1+numero2)
