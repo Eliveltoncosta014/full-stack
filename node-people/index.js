@@ -67,17 +67,26 @@ app.get("/listaNomes/:id", (req, res) => {
   res.json(resultado);
 });
 
-// Cadastrar novo nome
-app.post("/listaNomes", (req, res) => {
-  const novo = req.body;
+// criando rota excluir 
+app.delete("/listaNomes", (req, res) => {
+  let id = req.params.id;
+  let index = buscarIdnomes(id)
 
   // validação básica
-  if (!novo.id || !novo.nome || !novo.idade) {
-    return res.status(400).json({ erro: "Campos incompletos" });
+  if (index === -1) {
+    return res.status(404).send(`Nenhum nome com  id ${id} foi encontrado`);
   }
-
+  // se não encontrar, retona erro
   nomes.push(novo);
   res.status(201).send("Nome cadastrado com sucesso!");
+});
+
+// Rota alterar
+app.put("/listaNomes/:id", (req,res) => {
+let index= buscarIdNomes(req.params.id);
+nomes[index].nome = req.body.nome
+nomes[index].idade = req.body.idade
+
 });
 
 // Excluir por ID
