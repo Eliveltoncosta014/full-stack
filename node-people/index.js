@@ -106,3 +106,12 @@ app.delete("/listaNomes/:id", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
+// alterar id 
+// alterar id
+app.put("/listaNomes/:id", (req, res) => {
+  let index = buscarIdNomes(req.params.id);
+  nomes[index].nome = req.body.nome;
+  nomes[index].idade = req.body.idade;
+
+  res.json(nomes);
+});
