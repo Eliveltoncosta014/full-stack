@@ -21,3 +21,5 @@ let anoAtual = new Date().getFullYear();
         document.write("Ano de eleição:" + anoInicio + "<br>");
         anoInicio = anoInicio + 2;
     }
+
+    
